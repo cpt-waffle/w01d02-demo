@@ -11,13 +11,16 @@ console.log(4 + 4);
 let num1 = 1;
 let num2 = 2;
 let num3 = 3;
-const arr = [1,2,3,4,5,6,7,8];
+const arr = [10,10,20,30,40]
 console.log(arr);
 // how do i go through EVERY SINGLE NUMBER in the array?
 //  use a for loop!!
+let sum = 0;
 for (let i = 0; i <= arr.length - 1; i++) {
-    console.log("i is ===", i, '   arr[i] is ===',arr[i]);
+    sum = sum + Number(arr[i]);
 }
+
+console.log("The sum is: ", sum);
 
 
 // what are these "command line arguments"?
