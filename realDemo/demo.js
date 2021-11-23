@@ -6,12 +6,13 @@
 
 const sum = function(arr) {
     let result = 0;
-    console.log(arr);
-    for (let i = 0; i <= arr.length - 1; i++) {
-        result = result + Number(arr[i]);
+
+    for (let element of arr) {
+        result += Number(element);
     }
     return result;
 }
+
 const arr = process.argv.slice(2);
 const result = sum(arr);
-console.log("The sum is: ", result);
+console.log(`The sum is: ${result}`);
